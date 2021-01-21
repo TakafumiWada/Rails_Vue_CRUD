@@ -1,25 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Rails_Vue_CRUD
+プロジェクト作成後
+```
+rails webpacker:install
+rails webpacker:install:vue
+```
+Controller,view作成後、viewファイルに
+```html:index.html.erb
+<%= javascript_pack_tag 'hello_vue' %>
+```
+と記述することで`hello_vue.js`を取り込む
