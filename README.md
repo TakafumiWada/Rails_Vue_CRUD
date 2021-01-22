@@ -1,6 +1,11 @@
 # README
 
 プロジェクト作成後
+Gemに以下のものが入っているかを確認し、
+```
+gem 'webpacker', '~> 4.0'
+```
+確認され次第、コマンドで以下を実行
 ```
 rails webpacker:install
 rails webpacker:install:vue
